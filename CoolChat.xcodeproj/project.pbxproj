@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDFF021F4622ED00B31D6F /* GradientView.swift */; };
+		45E7476D1F46488E00B9D99C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7476C1F46488E00B9D99C /* Constants.swift */; };
 		45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */; };
 		45EBF3951F45EB9A00A82FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3931F45EB9A00A82FB9 /* Main.storyboard */; };
 		45EBF3971F45EB9A00A82FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		45CDFF021F4622ED00B31D6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		45E7476C1F46488E00B9D99C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45EBF38C1F45EB9A00A82FB9 /* CoolChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45EBF3941F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		45E7476B1F46487900B9D99C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45E7476C1F46488E00B9D99C /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		45EBF3831F45EB9A00A82FB9 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		45EBF38E1F45EB9A00A82FB9 /* CoolChat */ = {
 			isa = PBXGroup;
 			children = (
+				45E7476B1F46487900B9D99C /* Utilities */,
 				45EBF3A61F461D7300A82FB9 /* Model */,
 				45EBF3A71F461D7D00A82FB9 /* View */,
 				45EBF3A81F461D8500A82FB9 /* Controller */,
@@ -261,6 +272,7 @@
 				45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */,
 				45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */,
 				45EBF3A51F45F41C00A82FB9 /* SWRevealViewController.m in Sources */,
+				45E7476D1F46488E00B9D99C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
