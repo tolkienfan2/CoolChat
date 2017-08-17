@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDFF021F4622ED00B31D6F /* GradientView.swift */; };
 		45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */; };
 		45EBF3951F45EB9A00A82FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3931F45EB9A00A82FB9 /* Main.storyboard */; };
 		45EBF3971F45EB9A00A82FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45CDFF021F4622ED00B31D6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		45EBF38C1F45EB9A00A82FB9 /* CoolChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45EBF3941F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		45EBF3A71F461D7D00A82FB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45CDFF021F4622ED00B31D6F /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				45EBF3AC1F461DCE00A82FB9 /* ChannelVC.swift in Sources */,
 				45EBF3AA1F461DBC00A82FB9 /* ChatVC.swift in Sources */,
+				45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */,
 				45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */,
 				45EBF3A51F45F41C00A82FB9 /* SWRevealViewController.m in Sources */,
 			);
