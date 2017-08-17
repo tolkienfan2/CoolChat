@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */; };
-		45EBF3921F45EB9A00A82FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF3911F45EB9A00A82FB9 /* ViewController.swift */; };
 		45EBF3951F45EB9A00A82FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3931F45EB9A00A82FB9 /* Main.storyboard */; };
 		45EBF3971F45EB9A00A82FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */; };
 		45EBF39A1F45EB9A00A82FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBF3981F45EB9A00A82FB9 /* LaunchScreen.storyboard */; };
 		45EBF3A51F45F41C00A82FB9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF3A41F45F41C00A82FB9 /* SWRevealViewController.m */; };
+		45EBF3AA1F461DBC00A82FB9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */; };
+		45EBF3AC1F461DCE00A82FB9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */; };
 		69828946C2A892498273D301 /* Pods_CoolChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC451E17A6E74F3EC7D799 /* Pods_CoolChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45EBF38C1F45EB9A00A82FB9 /* CoolChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45EBF3911F45EB9A00A82FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45EBF3941F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45EBF3991F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +27,8 @@
 		45EBF3A21F45F41B00A82FB9 /* CoolChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		45EBF3A31F45F41C00A82FB9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		45EBF3A41F45F41C00A82FB9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		C73300FE88B7669A8751C939 /* Pods-CoolChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolChat/Pods-CoolChat.release.xcconfig"; sourceTree = "<group>"; };
 		E2FC451E17A6E74F3EC7D799 /* Pods_CoolChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD5714729581AD986D33AD /* Pods-CoolChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolChat/Pods-CoolChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,9 +76,11 @@
 		45EBF38E1F45EB9A00A82FB9 /* CoolChat */ = {
 			isa = PBXGroup;
 			children = (
+				45EBF3A61F461D7300A82FB9 /* Model */,
+				45EBF3A71F461D7D00A82FB9 /* View */,
+				45EBF3A81F461D8500A82FB9 /* Controller */,
 				45EBF3A11F45F3FB00A82FB9 /* Supporting Files */,
 				45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */,
-				45EBF3911F45EB9A00A82FB9 /* ViewController.swift */,
 				45EBF3931F45EB9A00A82FB9 /* Main.storyboard */,
 				45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */,
 				45EBF3981F45EB9A00A82FB9 /* LaunchScreen.storyboard */,
@@ -93,6 +97,29 @@
 				45EBF3A21F45F41B00A82FB9 /* CoolChat-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45EBF3A61F461D7300A82FB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45EBF3A71F461D7D00A82FB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45EBF3A81F461D8500A82FB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */,
+				45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CF9888002C2D2B09281674AB /* Frameworks */ = {
@@ -226,7 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EBF3921F45EB9A00A82FB9 /* ViewController.swift in Sources */,
+				45EBF3AC1F461DCE00A82FB9 /* ChannelVC.swift in Sources */,
+				45EBF3AA1F461DBC00A82FB9 /* ChatVC.swift in Sources */,
 				45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */,
 				45EBF3A51F45F41C00A82FB9 /* SWRevealViewController.m in Sources */,
 			);
