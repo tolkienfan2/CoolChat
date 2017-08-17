@@ -1,0 +1,6 @@
+framework module Pods_CoolChat {
+  umbrella header "Pods-CoolChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
