@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		458491221F46648A00C4976E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458491211F46648A00C4976E /* LoginVC.swift */; };
 		45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDFF021F4622ED00B31D6F /* GradientView.swift */; };
 		45E7476D1F46488E00B9D99C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7476C1F46488E00B9D99C /* Constants.swift */; };
 		45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		458491211F46648A00C4976E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		45CDFF021F4622ED00B31D6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		45E7476C1F46488E00B9D99C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45EBF38C1F45EB9A00A82FB9 /* CoolChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 			children = (
 				45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */,
 				45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */,
+				458491211F46648A00C4976E /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				45EBF3AC1F461DCE00A82FB9 /* ChannelVC.swift in Sources */,
 				45EBF3AA1F461DBC00A82FB9 /* ChatVC.swift in Sources */,
+				458491221F46648A00C4976E /* LoginVC.swift in Sources */,
 				45CDFF031F4622ED00B31D6F /* GradientView.swift in Sources */,
 				45EBF3901F45EB9A00A82FB9 /* AppDelegate.swift in Sources */,
 				45EBF3A51F45F41C00A82FB9 /* SWRevealViewController.m in Sources */,
