@@ -24,11 +24,17 @@ class CreateAccountVC: UIViewController {
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         guard let email = emailTxt.text, emailTxt.text != "" else { return }
         guard let pass = passTxt.text, passTxt.text != "" else { return }
-        AuthService.instance.registerUser(email: email, password: pass, completion: { (success) in
+        
+        AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
-                print("registered new user!")
+                AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
+                    
+                    if success {
+                        print("user logged in!", AuthService.instance.authToken)
+                    }
+                })
             }
-        })
+        }
     }
     
     @IBAction func chooseAvatarBtnPressed(_ sender: Any) {
