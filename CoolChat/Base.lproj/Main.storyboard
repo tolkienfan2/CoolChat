@@ -247,7 +247,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-QR-4TS">
                                         <rect key="frame" x="0.0" y="262" width="285" height="76"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlM-uh-jmo">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlM-uh-jmo" customClass="RoundedButton" customModule="CoolChat" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="37"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
@@ -432,15 +432,19 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="ykf-XH-0WW" eventType="touchUpInside" id="eZ2-Ye-gDt"/>
+                                    <action selector="setColorBtnPressed:" destination="LG5-B1-9Ui" eventType="touchUpInside" id="VW3-QI-IXy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-oB-9SW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-oB-9SW" customClass="RoundedButton" customModule="CoolChat" customModuleProvider="target">
                                 <rect key="frame" x="50" y="610" width="275" height="37"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="LG5-B1-9Ui" eventType="touchUpInside" id="b3J-Bi-Deg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryQ-Vx-hwf">
                                 <rect key="frame" x="136" y="370" width="103" height="132"/>
@@ -452,6 +456,7 @@
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="chooseAvatarBtnPressed:" destination="LG5-B1-9Ui" eventType="touchUpInside" id="20V-aB-wEc"/>
                                     <action selector="createAccountBtnPressed:" destination="ykf-XH-0WW" eventType="touchUpInside" id="O6v-pm-1oL"/>
                                 </connections>
                             </button>
@@ -493,6 +498,10 @@
                         <viewLayoutGuide key="safeArea" id="yH2-3O-axR"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="dEq-YI-eML" id="fZd-6F-Kai"/>
+                        <outlet property="passTxt" destination="Yol-6i-E6O" id="toP-3U-gdF"/>
+                        <outlet property="userImg" destination="KHa-Sy-rcJ" id="Dpd-rY-Oc9"/>
+                        <outlet property="usernameTxt" destination="ukv-L6-pZe" id="xpw-9F-JVs"/>
                         <segue destination="8Oo-dV-FnH" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Ode-xR-zK6"/>
                     </connections>
                 </viewController>
