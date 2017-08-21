@@ -101,7 +101,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOJ-Bx-ZAB">
-                                                            <rect key="frame" x="28" y="11" width="69" height="23.5"/>
+                                                            <rect key="frame" x="28" y="11" width="355" height="23.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="ZjC-xB-Jea"/>
                                                             </constraints>
