@@ -382,7 +382,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="segmentControlChanged:" destination="nXW-kz-lcX" eventType="valueChanged" id="hGX-LQ-bxc"/>
+                                    <action selector="segmentControlChanged:" destination="nXW-kz-lcX" eventType="valueChanged" id="tAo-Jr-hFL"/>
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MWA-O5-qll">
@@ -435,7 +435,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="MWA-O5-qll" id="Vdk-ud-J5D"/>
-                        <outlet property="segmentControl" destination="xr0-ad-LuE" id="MDB-cw-A1b"/>
+                        <outlet property="segmentControl" destination="xr0-ad-LuE" id="drW-4P-LGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvl-fc-Zrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
