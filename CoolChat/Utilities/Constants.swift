@@ -34,4 +34,8 @@ let HEADER = [
     "Content-Type": "application/json; charset = utf-8"
 ]
 
+//Colors
+let purplePlaceholder = #colorLiteral(red: 0.5818830132, green: 0.2156915367, blue: 1, alpha: 0.5)
 
+//Notification Constants
+let NOTIFY_USER_DATA_DID_CHANGE = Notification.Name("notifyUserDataChanged")
