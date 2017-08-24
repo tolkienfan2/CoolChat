@@ -195,11 +195,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-94-j45">
                                         <rect key="frame" x="0.0" y="90" width="285" height="122"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ll-d9-gd4">
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ll-d9-gd4" userLabel="email">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOs-cP-Upa">
                                                 <rect key="frame" x="0.0" y="50" width="285" height="1"/>
@@ -243,6 +243,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginBtnPressed:" destination="ykf-XH-0WW" eventType="touchUpInside" id="hCe-4i-oDX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-hv-oUh">
                                                 <rect key="frame" x="50" y="42" width="185" height="34"/>
@@ -267,11 +270,17 @@
                                     <constraint firstAttribute="trailing" secondItem="zD4-QR-4TS" secondAttribute="trailing" id="dLu-AF-ceE"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="L5l-1E-VKR" userLabel="Spinner">
+                                <rect key="frame" x="169" y="285" width="37" height="37"/>
+                                <color key="color" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KEc-LZ-Ley" firstAttribute="top" secondItem="3uM-YY-zi9" secondAttribute="top" constant="80" id="9Pa-bS-7WW"/>
                             <constraint firstItem="Wbw-Oa-vav" firstAttribute="trailing" secondItem="KEc-LZ-Ley" secondAttribute="trailing" constant="45" id="9Vd-iK-a2U"/>
+                            <constraint firstItem="L5l-1E-VKR" firstAttribute="centerX" secondItem="3uM-YY-zi9" secondAttribute="centerX" id="HJW-Kc-Gtq"/>
+                            <constraint firstAttribute="centerY" secondItem="L5l-1E-VKR" secondAttribute="centerY" constant="30" id="SZF-qa-Ftf"/>
                             <constraint firstItem="KEc-LZ-Ley" firstAttribute="centerX" secondItem="3uM-YY-zi9" secondAttribute="centerX" id="aoc-VL-YuJ"/>
                             <constraint firstItem="KEc-LZ-Ley" firstAttribute="leading" secondItem="Wbw-Oa-vav" secondAttribute="leading" constant="45" id="eEv-bk-ccM"/>
                             <constraint firstItem="Wbw-Oa-vav" firstAttribute="trailing" secondItem="d0O-ZN-6mc" secondAttribute="trailing" constant="45" id="eLT-FM-28v"/>
@@ -280,6 +289,9 @@
                         <viewLayoutGuide key="safeArea" id="Wbw-Oa-vav"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="2Ll-d9-gd4" id="80m-9R-y4Q"/>
+                        <outlet property="passwordTxt" destination="tMh-Z5-N3J" id="2f0-dB-VCi"/>
+                        <outlet property="spinner" destination="L5l-1E-VKR" id="wov-V2-sJA"/>
                         <segue destination="LG5-B1-9Ui" kind="show" identifier="toCreateAccount" id="q1w-T3-F8w"/>
                     </connections>
                 </viewController>

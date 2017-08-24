@@ -34,7 +34,7 @@ class ProfileVC: UIViewController {
         dismiss(animated: true, completion: nil)
         }
     
-    @IBAction func closeModalBtn(_ sender: Any) {
+   @IBAction func closeModalBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     

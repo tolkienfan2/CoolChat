@@ -23,6 +23,7 @@ let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
 let TO_AVATARS = "toAvatarPicker"
 let TO_PROFILE = "toProfile"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byemail/"
 
 //User Defaults
 
@@ -32,6 +33,11 @@ let USER_EMAIL = "userEmail"
 
 //Headers
 let HEADER = [
+    "Content-Type": "application/json; charset = utf-8"
+]
+
+let BEARER_HEADER = [
+    "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset = utf-8"
 ]
 
