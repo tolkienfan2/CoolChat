@@ -68,7 +68,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="clb-Be-zH3">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="clb-Be-zH3" customClass="CircleImage" customModule="CoolChat" customModuleProvider="target">
                                         <rect key="frame" x="33" y="559.5" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="faq-sO-A59"/>
@@ -148,6 +148,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="tfS-Pz-F3V" id="9Vx-wT-dvT"/>
+                        <outlet property="userImg" destination="clb-Be-zH3" id="5WW-Zu-M93"/>
                         <segue destination="ykf-XH-0WW" kind="show" identifier="toLogin" id="OKZ-5M-XvH"/>
                     </connections>
                 </viewController>
@@ -361,7 +362,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xr0-ad-LuE">
                                 <rect key="frame" x="112.5" y="28" width="150" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="3f2-cW-GEl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3f2-cW-GEl"/>
                                     <constraint firstAttribute="height" constant="30" id="LlK-0f-9F1"/>
                                 </constraints>
                                 <segments>
