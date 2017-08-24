@@ -16,6 +16,7 @@ class ChannelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIFY_USER_DATA_DID_CHANGE, object: nil)
 
     }
 
@@ -23,4 +24,9 @@ class ChannelVC: UIViewController {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
     
+    @objc func userDataDidChange(_ notif: Notification) {
+        if AuthService.instance.isLoggedIn {
+            loginBtn.setTitle(UserDataService.instance.name, for: . normal)
+        }
+    }
 }
