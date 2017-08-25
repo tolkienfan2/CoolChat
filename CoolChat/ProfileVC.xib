@@ -29,9 +29,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0z-Hl-jih" userLabel="bgView">
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0z-Hl-jih" userLabel="bgView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cB7-FI-XnN">
                     <rect key="frame" x="20" y="153.5" width="335" height="360"/>
@@ -82,7 +82,7 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="0.098164597602739725" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="YGN-Dj-zNd" secondAttribute="trailing" constant="20" id="OIl-MK-FNn"/>
                         <constraint firstAttribute="trailing" secondItem="h7i-ne-ZaC" secondAttribute="trailing" constant="20" id="Q1K-fL-1p9"/>
@@ -93,7 +93,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e0z-Hl-jih" secondAttribute="bottom" id="Ba6-SV-61c"/>
                 <constraint firstItem="e0z-Hl-jih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ExU-Em-Qk3"/>
