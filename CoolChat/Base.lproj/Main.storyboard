@@ -341,11 +341,33 @@
                                     <constraint firstAttribute="bottom" secondItem="aO7-aE-4DQ" secondAttribute="bottom" constant="12" id="nMb-wI-Fg3"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-TJ-MSR">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="JsH-OO-rvz" eventType="touchUpInside" id="ojK-fc-17m"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fi-Th-2ux">
+                                <rect key="frame" x="0.0" y="627" width="329" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IVd-F6-O8Q"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bfe-TJ-MSR" firstAttribute="leading" secondItem="0Fi-Th-2ux" secondAttribute="trailing" constant="8" id="0lz-29-e0s"/>
+                            <constraint firstItem="0Fi-Th-2ux" firstAttribute="bottom" secondItem="XF2-XW-Z7V" secondAttribute="bottom" id="3zy-Px-DRQ"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="NgQ-cA-eXE"/>
+                            <constraint firstItem="Bfe-TJ-MSR" firstAttribute="centerY" secondItem="0Fi-Th-2ux" secondAttribute="centerY" id="Taq-lx-GbK"/>
+                            <constraint firstItem="XF2-XW-Z7V" firstAttribute="trailing" secondItem="Bfe-TJ-MSR" secondAttribute="trailing" constant="8" id="WDM-Yv-Jys"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="top" secondItem="K3i-Eb-sjx" secondAttribute="top" id="eBw-vn-X1k"/>
+                            <constraint firstItem="0Fi-Th-2ux" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="gv2-S0-zXb"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="trailing" secondItem="XF2-XW-Z7V" secondAttribute="trailing" id="wx4-MF-jXV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XF2-XW-Z7V"/>
@@ -353,6 +375,7 @@
                     <connections>
                         <outlet property="channelNameLbl" destination="syT-JZ-Ebd" id="cdK-eu-BqN"/>
                         <outlet property="menuBtn" destination="aO7-aE-4DQ" id="V1o-3d-1oa"/>
+                        <outlet property="messageTxt" destination="0Fi-Th-2ux" id="sZH-Wb-JmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLA-8E-NLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -624,6 +647,7 @@
         <image name="addChannelButton" width="22" height="22"/>
         <image name="closeButton" width="28" height="28"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
