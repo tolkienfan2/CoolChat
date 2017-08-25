@@ -16,6 +16,7 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_ADD = "\(BASE_URL)user/add"
 let URL_GET_CHANNELS = "\(BASE_URL)channel"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel"
 
 //Segues
 
@@ -49,3 +50,4 @@ let purplePlaceholder = #colorLiteral(red: 0.5818830132, green: 0.2156915367, bl
 let NOTIFY_USER_DATA_DID_CHANGE = Notification.Name("userDataChanged")
 let NOTIFY_CHANNELS_LOADED = Notification.Name("channelsLoaded")
 let NOTIFY_CHANNEL_SELECTED = Notification.Name("channelSelected")
+let NOTIFY_MESSAGES_LOADED = Notification.Name("messagesLoaded")
