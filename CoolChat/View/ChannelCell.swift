@@ -21,8 +21,10 @@ class ChannelCell: UITableViewCell {
 
         if selected {
             self.layer.backgroundColor = UIColor(white: 1, alpha: 0.2).cgColor
+            self.channelName.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         } else {
             self.layer.backgroundColor = UIColor.clear.cgColor
+            self.channelName.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
     }
     

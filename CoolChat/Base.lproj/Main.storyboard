@@ -85,7 +85,7 @@
                                             <action selector="loginBtnPressed:" destination="0SX-zo-W3p" eventType="touchUpInside" id="wsT-54-75C"/>
                                         </connections>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-1o-24S">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-1o-24S">
                                         <rect key="frame" x="0.0" y="144" width="375" height="395.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
@@ -351,6 +351,7 @@
                         <viewLayoutGuide key="safeArea" id="XF2-XW-Z7V"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="syT-JZ-Ebd" id="cdK-eu-BqN"/>
                         <outlet property="menuBtn" destination="aO7-aE-4DQ" id="V1o-3d-1oa"/>
                     </connections>
                 </viewController>
