@@ -85,11 +85,11 @@
                                             <action selector="loginBtnPressed:" destination="0SX-zo-W3p" eventType="touchUpInside" id="wsT-54-75C"/>
                                         </connections>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-1o-24S">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-1o-24S">
                                         <rect key="frame" x="0.0" y="144" width="375" height="395.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="btf-9Z-plm">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelCell" id="btf-9Z-plm" customClass="ChannelCell" customModule="CoolChat" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="btf-9Z-plm" id="o4U-YK-hCT">
@@ -110,6 +110,9 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="channelName" destination="WOJ-Bx-ZAB" id="DrB-iG-3pB"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -148,6 +151,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="tfS-Pz-F3V" id="9Vx-wT-dvT"/>
+                        <outlet property="tableView" destination="u3J-1o-24S" id="MYi-4K-K6w"/>
                         <outlet property="userImg" destination="clb-Be-zH3" id="5WW-Zu-M93"/>
                         <segue destination="ykf-XH-0WW" kind="show" identifier="toLogin" id="OKZ-5M-XvH"/>
                     </connections>
