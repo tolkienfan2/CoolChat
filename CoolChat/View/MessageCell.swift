@@ -12,7 +12,7 @@ class MessageCell: UITableViewCell {
 
     @IBOutlet weak var userImg: CircleImage!
     @IBOutlet weak var userNameLbl: UILabel!
-    @IBOutlet weak var timestampLbl: UILabel!
+    @IBOutlet weak var timeStampLbl: UILabel!
     @IBOutlet weak var messageTxtLbl: UILabel!
     
     override func awakeFromNib() {

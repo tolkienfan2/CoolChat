@@ -392,6 +392,7 @@
                                                 <constraint firstItem="Rkx-HU-ekz" firstAttribute="leading" secondItem="oFi-Fb-BaU" secondAttribute="trailing" constant="12" id="Oi4-94-FCP"/>
                                                 <constraint firstItem="Rkx-HU-ekz" firstAttribute="top" secondItem="SfO-fI-gND" secondAttribute="bottom" constant="8" id="Q9R-K9-pN2"/>
                                                 <constraint firstItem="oFi-Fb-BaU" firstAttribute="top" secondItem="IWz-cH-crb" secondAttribute="topMargin" id="RA1-QG-4AZ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FIX-9b-R4i" secondAttribute="trailing" constant="20" symbolic="YES" id="REc-7n-r4f"/>
                                                 <constraint firstItem="FIX-9b-R4i" firstAttribute="centerY" secondItem="SfO-fI-gND" secondAttribute="centerY" id="fMV-Bc-Ggf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Rkx-HU-ekz" secondAttribute="trailing" constant="12" id="ouc-Xu-GdH"/>
                                                 <constraint firstItem="oFi-Fb-BaU" firstAttribute="leading" secondItem="IWz-cH-crb" secondAttribute="leadingMargin" id="t2q-3o-No2"/>
@@ -401,7 +402,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="messageTxtLbl" destination="Rkx-HU-ekz" id="VZ3-st-Q9S"/>
-                                            <outlet property="timestampLbl" destination="FIX-9b-R4i" id="GWA-NX-wER"/>
+                                            <outlet property="timeStampLbl" destination="FIX-9b-R4i" id="s5L-nM-IFQ"/>
                                             <outlet property="userImg" destination="oFi-Fb-BaU" id="eRw-2u-CeM"/>
                                             <outlet property="userNameLbl" destination="SfO-fI-gND" id="WcG-iC-RVB"/>
                                         </connections>
@@ -416,6 +417,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="messageEdited:" destination="JsH-OO-rvz" eventType="editingChanged" id="far-Nu-J2j"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -439,6 +443,7 @@
                         <outlet property="channelNameLbl" destination="syT-JZ-Ebd" id="cdK-eu-BqN"/>
                         <outlet property="menuBtn" destination="aO7-aE-4DQ" id="V1o-3d-1oa"/>
                         <outlet property="messageTxt" destination="0Fi-Th-2ux" id="sZH-Wb-JmW"/>
+                        <outlet property="sendBtn" destination="Bfe-TJ-MSR" id="Vyy-dU-aEM"/>
                         <outlet property="tableView" destination="xhV-dx-HRB" id="BEC-HM-mPF"/>
                     </connections>
                 </viewController>

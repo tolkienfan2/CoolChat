@@ -50,4 +50,3 @@ let purplePlaceholder = #colorLiteral(red: 0.5818830132, green: 0.2156915367, bl
 let NOTIFY_USER_DATA_DID_CHANGE = Notification.Name("userDataChanged")
 let NOTIFY_CHANNELS_LOADED = Notification.Name("channelsLoaded")
 let NOTIFY_CHANNEL_SELECTED = Notification.Name("channelSelected")
-let NOTIFY_MESSAGES_LOADED = Notification.Name("messagesLoaded")
