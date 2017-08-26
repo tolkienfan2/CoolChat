@@ -349,6 +349,65 @@
                                     <action selector="sendMessagePressed:" destination="JsH-OO-rvz" eventType="touchUpInside" id="ojK-fc-17m"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-dx-HRB">
+                                <rect key="frame" x="0.0" y="77" width="375" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="80" id="4oE-Qg-b4F" customClass="MessageCell" customModule="CoolChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4oE-Qg-b4F" id="IWz-cH-crb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oFi-Fb-BaU" customClass="CircleImage" customModule="CoolChat" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="a9u-uv-CeV"/>
+                                                        <constraint firstAttribute="width" constant="50" id="cJ5-ZO-c0T"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfO-fI-gND">
+                                                    <rect key="frame" x="70" y="8" width="80" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-9b-R4i">
+                                                    <rect key="frame" x="156" y="10" width="61" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="MessageText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkx-HU-ekz">
+                                                    <rect key="frame" x="70" y="39.5" width="285" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SfO-fI-gND" firstAttribute="top" secondItem="oFi-Fb-BaU" secondAttribute="top" id="LOc-wY-Kr9"/>
+                                                <constraint firstItem="FIX-9b-R4i" firstAttribute="leading" secondItem="SfO-fI-gND" secondAttribute="trailing" constant="6" id="NZ6-qm-hKS"/>
+                                                <constraint firstItem="Rkx-HU-ekz" firstAttribute="leading" secondItem="oFi-Fb-BaU" secondAttribute="trailing" constant="12" id="Oi4-94-FCP"/>
+                                                <constraint firstItem="Rkx-HU-ekz" firstAttribute="top" secondItem="SfO-fI-gND" secondAttribute="bottom" constant="8" id="Q9R-K9-pN2"/>
+                                                <constraint firstItem="oFi-Fb-BaU" firstAttribute="top" secondItem="IWz-cH-crb" secondAttribute="topMargin" id="RA1-QG-4AZ"/>
+                                                <constraint firstItem="FIX-9b-R4i" firstAttribute="centerY" secondItem="SfO-fI-gND" secondAttribute="centerY" id="fMV-Bc-Ggf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rkx-HU-ekz" secondAttribute="trailing" constant="12" id="ouc-Xu-GdH"/>
+                                                <constraint firstItem="oFi-Fb-BaU" firstAttribute="leading" secondItem="IWz-cH-crb" secondAttribute="leadingMargin" id="t2q-3o-No2"/>
+                                                <constraint firstItem="SfO-fI-gND" firstAttribute="leading" secondItem="oFi-Fb-BaU" secondAttribute="trailing" constant="12" id="vzE-8S-c5Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rkx-HU-ekz" secondAttribute="bottom" constant="14" id="xVS-IG-sqX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageTxtLbl" destination="Rkx-HU-ekz" id="VZ3-st-Q9S"/>
+                                            <outlet property="timestampLbl" destination="FIX-9b-R4i" id="GWA-NX-wER"/>
+                                            <outlet property="userImg" destination="oFi-Fb-BaU" id="eRw-2u-CeM"/>
+                                            <outlet property="userNameLbl" destination="SfO-fI-gND" id="WcG-iC-RVB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fi-Th-2ux">
                                 <rect key="frame" x="0.0" y="627" width="329" height="40"/>
                                 <constraints>
@@ -356,18 +415,22 @@
                                 </constraints>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Bfe-TJ-MSR" firstAttribute="leading" secondItem="0Fi-Th-2ux" secondAttribute="trailing" constant="8" id="0lz-29-e0s"/>
                             <constraint firstItem="0Fi-Th-2ux" firstAttribute="bottom" secondItem="XF2-XW-Z7V" secondAttribute="bottom" id="3zy-Px-DRQ"/>
+                            <constraint firstItem="xhV-dx-HRB" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="FcY-7s-s7V"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="NgQ-cA-eXE"/>
                             <constraint firstItem="Bfe-TJ-MSR" firstAttribute="centerY" secondItem="0Fi-Th-2ux" secondAttribute="centerY" id="Taq-lx-GbK"/>
                             <constraint firstItem="XF2-XW-Z7V" firstAttribute="trailing" secondItem="Bfe-TJ-MSR" secondAttribute="trailing" constant="8" id="WDM-Yv-Jys"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="top" secondItem="K3i-Eb-sjx" secondAttribute="top" id="eBw-vn-X1k"/>
                             <constraint firstItem="0Fi-Th-2ux" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="gv2-S0-zXb"/>
+                            <constraint firstItem="0Fi-Th-2ux" firstAttribute="top" secondItem="xhV-dx-HRB" secondAttribute="bottom" constant="30" id="hAp-qg-IJm"/>
+                            <constraint firstItem="XF2-XW-Z7V" firstAttribute="trailing" secondItem="xhV-dx-HRB" secondAttribute="trailing" id="jiY-g4-klc"/>
+                            <constraint firstItem="xhV-dx-HRB" firstAttribute="top" secondItem="VRm-rh-8Ph" secondAttribute="bottom" id="tF2-2T-Gsd"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="trailing" secondItem="XF2-XW-Z7V" secondAttribute="trailing" id="wx4-MF-jXV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XF2-XW-Z7V"/>
@@ -376,11 +439,12 @@
                         <outlet property="channelNameLbl" destination="syT-JZ-Ebd" id="cdK-eu-BqN"/>
                         <outlet property="menuBtn" destination="aO7-aE-4DQ" id="V1o-3d-1oa"/>
                         <outlet property="messageTxt" destination="0Fi-Th-2ux" id="sZH-Wb-JmW"/>
+                        <outlet property="tableView" destination="xhV-dx-HRB" id="BEC-HM-mPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLA-8E-NLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="650"/>
+            <point key="canvasLocation" x="824.79999999999995" y="649.92503748125944"/>
         </scene>
         <!--Avatar PickerVC-->
         <scene sceneID="u7s-96-YhO">
