@@ -16,6 +16,7 @@ class MessageService {
     
     var channels = [Channel]()
     var selectedChannel: Channel?
+    var unreadChannels = [String]()
     
     var messages = [Message]()
     var message: Message?
@@ -59,15 +60,13 @@ class MessageService {
                     debugPrint(error as Any)
                 }
                 
-                NotificationCenter.default.post(name: NOTIFY_MESSAGES_LOADED, object: nil)
                 completion(true)
             
             } else {
                 
                 debugPrint(response.result.error as Any)
                 completion(false)
-           }
-            
+           }            
         }
     }
     

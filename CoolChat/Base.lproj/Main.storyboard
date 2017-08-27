@@ -421,6 +421,12 @@
                                     <action selector="messageEdited:" destination="JsH-OO-rvz" eventType="editingChanged" id="far-Nu-J2j"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQo-6U-CDj">
+                                <rect key="frame" x="8" y="605" width="0.0" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -428,14 +434,18 @@
                             <constraint firstItem="0Fi-Th-2ux" firstAttribute="bottom" secondItem="XF2-XW-Z7V" secondAttribute="bottom" id="3zy-Px-DRQ"/>
                             <constraint firstItem="xhV-dx-HRB" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="FcY-7s-s7V"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="NgQ-cA-eXE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PQo-6U-CDj" secondAttribute="trailing" constant="20" symbolic="YES" id="Sad-Na-W88"/>
                             <constraint firstItem="Bfe-TJ-MSR" firstAttribute="centerY" secondItem="0Fi-Th-2ux" secondAttribute="centerY" id="Taq-lx-GbK"/>
                             <constraint firstItem="XF2-XW-Z7V" firstAttribute="trailing" secondItem="Bfe-TJ-MSR" secondAttribute="trailing" constant="8" id="WDM-Yv-Jys"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="top" secondItem="K3i-Eb-sjx" secondAttribute="top" id="eBw-vn-X1k"/>
+                            <constraint firstItem="0Fi-Th-2ux" firstAttribute="top" secondItem="PQo-6U-CDj" secondAttribute="bottom" constant="4" id="fT5-3P-fJG"/>
                             <constraint firstItem="0Fi-Th-2ux" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" id="gv2-S0-zXb"/>
                             <constraint firstItem="0Fi-Th-2ux" firstAttribute="top" secondItem="xhV-dx-HRB" secondAttribute="bottom" constant="30" id="hAp-qg-IJm"/>
                             <constraint firstItem="XF2-XW-Z7V" firstAttribute="trailing" secondItem="xhV-dx-HRB" secondAttribute="trailing" id="jiY-g4-klc"/>
                             <constraint firstItem="xhV-dx-HRB" firstAttribute="top" secondItem="VRm-rh-8Ph" secondAttribute="bottom" id="tF2-2T-Gsd"/>
                             <constraint firstItem="VRm-rh-8Ph" firstAttribute="trailing" secondItem="XF2-XW-Z7V" secondAttribute="trailing" id="wx4-MF-jXV"/>
+                            <constraint firstItem="PQo-6U-CDj" firstAttribute="leading" secondItem="XF2-XW-Z7V" secondAttribute="leading" constant="8" id="xih-Rg-rF8"/>
+                            <constraint firstItem="PQo-6U-CDj" firstAttribute="top" secondItem="xhV-dx-HRB" secondAttribute="bottom" constant="8" id="xpT-nA-4rD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XF2-XW-Z7V"/>
                     </view>
@@ -445,6 +455,7 @@
                         <outlet property="messageTxt" destination="0Fi-Th-2ux" id="sZH-Wb-JmW"/>
                         <outlet property="sendBtn" destination="Bfe-TJ-MSR" id="Vyy-dU-aEM"/>
                         <outlet property="tableView" destination="xhV-dx-HRB" id="BEC-HM-mPF"/>
+                        <outlet property="typingUsersLbl" destination="PQo-6U-CDj" id="4Qu-hr-Lx2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLA-8E-NLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
