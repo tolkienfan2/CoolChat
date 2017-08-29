@@ -14,6 +14,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+    var channelVC = ChannelVC()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()

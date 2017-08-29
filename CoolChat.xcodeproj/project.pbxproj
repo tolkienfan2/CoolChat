@@ -16,6 +16,8 @@
 		453CD1821F50B77800E426D0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CD1811F50B77800E426D0 /* Message.swift */; };
 		453CD1841F50E91400E426D0 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CD1831F50E91400E426D0 /* KeyboardBoundView.swift */; };
 		453CD1861F50EF2200E426D0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CD1851F50EF2200E426D0 /* MessageCell.swift */; };
+		453CD18B1F54BFFE00E426D0 /* UpdateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CD1891F54961600E426D0 /* UpdateUserVC.swift */; };
+		453CD18C1F54C00E00E426D0 /* UpdateUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453CD18A1F54967700E426D0 /* UpdateUserVC.xib */; };
 		458491221F46648A00C4976E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458491211F46648A00C4976E /* LoginVC.swift */; };
 		458491241F472DDE00C4976E /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458491231F472DDE00C4976E /* CreateAccountVC.swift */; };
 		458491271F4B2D9900C4976E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458491261F4B2D9900C4976E /* AuthService.swift */; };
@@ -39,38 +41,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		453CD1751F504DDB00E426D0 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
-		453CD1771F504E0800E426D0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		453CD1791F50591F00E426D0 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
-		453CD17B1F50693E00E426D0 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
-		453CD17C1F50693E00E426D0 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
-		453CD17F1F50738900E426D0 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
-		453CD1811F50B77800E426D0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		453CD1831F50E91400E426D0 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
-		453CD1851F50EF2200E426D0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		458491211F46648A00C4976E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		458491231F472DDE00C4976E /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
-		458491261F4B2D9900C4976E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		458491281F4B563500C4976E /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		4584912A1F4B856500C4976E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
-		45C061041F4DCFCF00C2E658 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
-		45C061061F4DD1A600C2E658 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
-		45C061081F4E110900C2E658 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		45C061301F4EF5BD00C2E658 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		45C061311F4EF5BD00C2E658 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
-		45CDFF021F4622ED00B31D6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		453CD1751F504DDB00E426D0 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageService.swift; path = CoolChat/Services/MessageService.swift; sourceTree = SOURCE_ROOT; };
+		453CD1771F504E0800E426D0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = CoolChat/Model/Channel.swift; sourceTree = SOURCE_ROOT; };
+		453CD1791F50591F00E426D0 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelCell.swift; path = CoolChat/View/ChannelCell.swift; sourceTree = SOURCE_ROOT; };
+		453CD17B1F50693E00E426D0 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddChannelVC.swift; path = CoolChat/Controller/AddChannelVC.swift; sourceTree = SOURCE_ROOT; };
+		453CD17C1F50693E00E426D0 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AddChannelVC.xib; path = CoolChat/AddChannelVC.xib; sourceTree = SOURCE_ROOT; };
+		453CD17F1F50738900E426D0 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SocketService.swift; path = CoolChat/Services/SocketService.swift; sourceTree = SOURCE_ROOT; };
+		453CD1811F50B77800E426D0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = CoolChat/Model/Message.swift; sourceTree = SOURCE_ROOT; };
+		453CD1831F50E91400E426D0 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = CoolChat/View/KeyboardBoundView.swift; sourceTree = SOURCE_ROOT; };
+		453CD1851F50EF2200E426D0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = CoolChat/View/MessageCell.swift; sourceTree = SOURCE_ROOT; };
+		453CD1891F54961600E426D0 /* UpdateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpdateUserVC.swift; path = CoolChat/Controller/UpdateUserVC.swift; sourceTree = SOURCE_ROOT; };
+		453CD18A1F54967700E426D0 /* UpdateUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UpdateUserVC.xib; path = CoolChat/UpdateUserVC.xib; sourceTree = SOURCE_ROOT; };
+		458491211F46648A00C4976E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = CoolChat/Controller/LoginVC.swift; sourceTree = SOURCE_ROOT; };
+		458491231F472DDE00C4976E /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateAccountVC.swift; path = CoolChat/Controller/CreateAccountVC.swift; sourceTree = SOURCE_ROOT; };
+		458491261F4B2D9900C4976E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = CoolChat/Services/AuthService.swift; sourceTree = SOURCE_ROOT; };
+		458491281F4B563500C4976E /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = CoolChat/View/RoundedButton.swift; sourceTree = SOURCE_ROOT; };
+		4584912A1F4B856500C4976E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDataService.swift; path = CoolChat/Services/UserDataService.swift; sourceTree = SOURCE_ROOT; };
+		45C061041F4DCFCF00C2E658 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvatarPickerVC.swift; path = CoolChat/Controller/AvatarPickerVC.swift; sourceTree = SOURCE_ROOT; };
+		45C061061F4DD1A600C2E658 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvatarCell.swift; path = CoolChat/View/AvatarCell.swift; sourceTree = SOURCE_ROOT; };
+		45C061081F4E110900C2E658 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImage.swift; path = CoolChat/View/CircleImage.swift; sourceTree = SOURCE_ROOT; };
+		45C061301F4EF5BD00C2E658 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = CoolChat/Controller/ProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		45C061311F4EF5BD00C2E658 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileVC.xib; path = CoolChat/ProfileVC.xib; sourceTree = SOURCE_ROOT; };
+		45CDFF021F4622ED00B31D6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = CoolChat/View/GradientView.swift; sourceTree = SOURCE_ROOT; };
 		45E7476C1F46488E00B9D99C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45EBF38C1F45EB9A00A82FB9 /* CoolChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45EBF38F1F45EB9A00A82FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CoolChat/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		45EBF3941F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CoolChat/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		45EBF3991F45EB9A00A82FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		45EBF39B1F45EB9A00A82FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45EBF3A21F45F41B00A82FB9 /* CoolChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		45EBF3A31F45F41C00A82FB9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		45EBF3A41F45F41C00A82FB9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		45EBF39B1F45EB9A00A82FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CoolChat/Info.plist; sourceTree = SOURCE_ROOT; };
+		45EBF3A21F45F41B00A82FB9 /* CoolChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CoolChat-Bridging-Header.h"; path = "CoolChat/Supporting Files/CoolChat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		45EBF3A31F45F41C00A82FB9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "CoolChat/Supporting Files/SWRevealViewController.h"; sourceTree = SOURCE_ROOT; };
+		45EBF3A41F45F41C00A82FB9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "CoolChat/Supporting Files/SWRevealViewController.m"; sourceTree = SOURCE_ROOT; };
+		45EBF3A91F461DBC00A82FB9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatVC.swift; path = CoolChat/Controller/ChatVC.swift; sourceTree = SOURCE_ROOT; };
+		45EBF3AB1F461DCE00A82FB9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelVC.swift; path = CoolChat/Controller/ChannelVC.swift; sourceTree = SOURCE_ROOT; };
 		C73300FE88B7669A8751C939 /* Pods-CoolChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolChat/Pods-CoolChat.release.xcconfig"; sourceTree = "<group>"; };
 		E2FC451E17A6E74F3EC7D799 /* Pods_CoolChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD5714729581AD986D33AD /* Pods-CoolChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolChat/Pods-CoolChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,8 +109,9 @@
 				453CD1751F504DDB00E426D0 /* MessageService.swift */,
 				453CD17F1F50738900E426D0 /* SocketService.swift */,
 			);
-			path = Services;
-			sourceTree = "<group>";
+			name = Services;
+			path = CoolChat/Services;
+			sourceTree = SOURCE_ROOT;
 		};
 		45E7476B1F46487900B9D99C /* Utilities */ = {
 			isa = PBXGroup;
@@ -147,6 +152,7 @@
 				45EBF3931F45EB9A00A82FB9 /* Main.storyboard */,
 				45C061311F4EF5BD00C2E658 /* ProfileVC.xib */,
 				453CD17C1F50693E00E426D0 /* AddChannelVC.xib */,
+				453CD18A1F54967700E426D0 /* UpdateUserVC.xib */,
 				45EBF3961F45EB9A00A82FB9 /* Assets.xcassets */,
 				45EBF3981F45EB9A00A82FB9 /* LaunchScreen.storyboard */,
 				45EBF39B1F45EB9A00A82FB9 /* Info.plist */,
@@ -161,8 +167,9 @@
 				45EBF3A41F45F41C00A82FB9 /* SWRevealViewController.m */,
 				45EBF3A21F45F41B00A82FB9 /* CoolChat-Bridging-Header.h */,
 			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
+			name = "Supporting Files";
+			path = "CoolChat/Supporting Files";
+			sourceTree = SOURCE_ROOT;
 		};
 		45EBF3A61F461D7300A82FB9 /* Model */ = {
 			isa = PBXGroup;
@@ -170,8 +177,9 @@
 				453CD1771F504E0800E426D0 /* Channel.swift */,
 				453CD1811F50B77800E426D0 /* Message.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = CoolChat/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 		45EBF3A71F461D7D00A82FB9 /* View */ = {
 			isa = PBXGroup;
@@ -184,8 +192,9 @@
 				45C061081F4E110900C2E658 /* CircleImage.swift */,
 				453CD1831F50E91400E426D0 /* KeyboardBoundView.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
+			name = View;
+			path = CoolChat/View;
+			sourceTree = SOURCE_ROOT;
 		};
 		45EBF3A81F461D8500A82FB9 /* Controller */ = {
 			isa = PBXGroup;
@@ -197,9 +206,11 @@
 				45C061041F4DCFCF00C2E658 /* AvatarPickerVC.swift */,
 				45C061301F4EF5BD00C2E658 /* ProfileVC.swift */,
 				453CD17B1F50693E00E426D0 /* AddChannelVC.swift */,
+				453CD1891F54961600E426D0 /* UpdateUserVC.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
+			name = Controller;
+			path = CoolChat/Controller;
+			sourceTree = SOURCE_ROOT;
 		};
 		CF9888002C2D2B09281674AB /* Frameworks */ = {
 			isa = PBXGroup;
@@ -271,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453CD18C1F54C00E00E426D0 /* UpdateUserVC.xib in Resources */,
 				453CD17E1F50693E00E426D0 /* AddChannelVC.xib in Resources */,
 				45C061331F4EF5BD00C2E658 /* ProfileVC.xib in Resources */,
 				45EBF39A1F45EB9A00A82FB9 /* LaunchScreen.storyboard in Resources */,
@@ -342,6 +354,7 @@
 				45C061051F4DCFCF00C2E658 /* AvatarPickerVC.swift in Sources */,
 				453CD1861F50EF2200E426D0 /* MessageCell.swift in Sources */,
 				458491291F4B563500C4976E /* RoundedButton.swift in Sources */,
+				453CD18B1F54BFFE00E426D0 /* UpdateUserVC.swift in Sources */,
 				453CD1821F50B77800E426D0 /* Message.swift in Sources */,
 				453CD1781F504E0800E426D0 /* Channel.swift in Sources */,
 				45C061091F4E110900C2E658 /* CircleImage.swift in Sources */,
@@ -369,7 +382,8 @@
 				45EBF3941F45EB9A00A82FB9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = CoolChat;
+			sourceTree = SOURCE_ROOT;
 		};
 		45EBF3981F45EB9A00A82FB9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -377,7 +391,8 @@
 				45EBF3991F45EB9A00A82FB9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = CoolChat;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 

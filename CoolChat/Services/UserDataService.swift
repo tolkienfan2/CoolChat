@@ -31,6 +31,10 @@ class UserDataService {
         self.avatar = avatar
     }
     
+    func updateUsername(name: String) {
+        setUserData(id: self.id, email: self.email, name: name, avatar: self.avatar, color: self.color)
+    }
+    
     func returnUIColor(components: String) -> UIColor {
         
         let scanner = Scanner(string:components)

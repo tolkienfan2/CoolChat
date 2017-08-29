@@ -81,15 +81,25 @@
                                 </button>
                             </subviews>
                         </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saJ-La-4VM" userLabel="updateUsername">
+                            <rect key="frame" x="107" y="54.5" width="120" height="34.5"/>
+                            <connections>
+                                <action selector="updateUsernameBtnPressed:" destination="-1" eventType="touchUpInside" id="8qa-OG-mHk"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="saJ-La-4VM" firstAttribute="width" secondItem="zQY-bI-l19" secondAttribute="width" id="CWr-gF-U7P"/>
+                        <constraint firstItem="saJ-La-4VM" firstAttribute="centerX" secondItem="UHG-4W-SvM" secondAttribute="centerX" id="HhT-Wh-LZH"/>
                         <constraint firstAttribute="trailing" secondItem="YGN-Dj-zNd" secondAttribute="trailing" constant="20" id="OIl-MK-FNn"/>
                         <constraint firstAttribute="trailing" secondItem="h7i-ne-ZaC" secondAttribute="trailing" constant="20" id="Q1K-fL-1p9"/>
+                        <constraint firstItem="saJ-La-4VM" firstAttribute="centerY" secondItem="UHG-4W-SvM" secondAttribute="centerY" id="SG4-2L-LM2"/>
                         <constraint firstItem="h7i-ne-ZaC" firstAttribute="leading" secondItem="cB7-FI-XnN" secondAttribute="leading" constant="20" id="UbJ-nd-NU9"/>
                         <constraint firstItem="YGN-Dj-zNd" firstAttribute="top" secondItem="cB7-FI-XnN" secondAttribute="top" constant="20" id="dR6-SP-PhO"/>
                         <constraint firstAttribute="height" constant="360" id="qPR-hl-muF"/>
                         <constraint firstItem="h7i-ne-ZaC" firstAttribute="centerY" secondItem="cB7-FI-XnN" secondAttribute="centerY" id="wxH-rU-jZL"/>
+                        <constraint firstItem="saJ-La-4VM" firstAttribute="height" secondItem="UHG-4W-SvM" secondAttribute="height" id="xH4-g7-kcl"/>
                     </constraints>
                 </view>
             </subviews>

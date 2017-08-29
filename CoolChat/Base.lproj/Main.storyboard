@@ -300,6 +300,7 @@
                         <outlet property="passwordTxt" destination="tMh-Z5-N3J" id="2f0-dB-VCi"/>
                         <outlet property="spinner" destination="L5l-1E-VKR" id="wov-V2-sJA"/>
                         <segue destination="LG5-B1-9Ui" kind="show" identifier="toCreateAccount" id="q1w-T3-F8w"/>
+                        <segue destination="0SX-zo-W3p" kind="show" identifier="toChannelVC" id="x6b-Gz-0H0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8a-xX-FTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -732,4 +733,7 @@
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="x6b-Gz-0H0"/>
+    </inferredMetricsTieBreakers>
 </document>

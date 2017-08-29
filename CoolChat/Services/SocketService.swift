@@ -27,6 +27,22 @@ class SocketService: NSObject {
         socket.disconnect()
     }
     
+    func updateUserById(name: String, userId: String, completion: @escaping CompletionHandler) {
+        let user = UserDataService.instance
+        socket.emit("name", user.name)
+        completion(true)
+    }
+    
+    func loadUpdatedUsername(completion: @escaping (_ name: String) -> Void) {
+        socket.on("usernameUpdated") { (dataArray, ack) in
+            guard let name = dataArray[0] as? String else { return }
+            UserDataService.instance.updateUsername(name: name)
+            let user = UserDataService.instance
+            let updatedName = user.name
+            completion(updatedName)
+        }
+    }
+    
     func addChannel(name: String, description: String, completion: @escaping CompletionHandler) {
         
         socket.emit("newChannel", name, description)

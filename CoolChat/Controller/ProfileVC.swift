@@ -17,6 +17,16 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(ProfileVC.usernameUpdated(_:)), name: NOTIFY_USER_NAME_UPDATED, object: nil)
+        setupView()
+        
+        SocketService.instance.loadUpdatedUsername { (updatedName) in
+            self.userName.text = updatedName
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+ 
         setupView()
     }
     
@@ -29,13 +39,23 @@ class ProfileVC: UIViewController {
         let closeTouch = UITapGestureRecognizer(target: self, action: #selector(ProfileVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
     }
-    
+ 
+    @objc func usernameUpdated(_ notif: Notification) {
+        userName.text = UserDataService.instance.name
+    }
+
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
         }
     
    @IBAction func closeModalBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func updateUsernameBtnPressed(_ sender: Any) {
+        let updateUserVC = UpdateUserVC()
+        updateUserVC.modalPresentationStyle = .custom
+        present(updateUserVC, animated: false, completion: nil)
     }
     
     @IBAction func logoutBtnPressed(_ sender: Any) {

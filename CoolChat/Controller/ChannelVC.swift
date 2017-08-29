@@ -26,7 +26,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIFY_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIFY_CHANNELS_LOADED, object: nil)
-
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.usernameUpdated(_:)), name: NOTIFY_USER_NAME_UPDATED, object: nil)
+        
         setupUserInfo()
 
         SocketService.instance.getChannel { (success) in
@@ -41,6 +42,14 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.tableView.reloadData()
             }
         }
+        
+        SocketService.instance.loadUpdatedUsername { (updatedName) in
+            self.loginBtn.setTitle(updatedName, for: .normal)
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+        tableView.reloadData()
     }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
@@ -57,8 +66,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    @objc func usernameUpdated(_ notif: Notification) {
+        loginBtn.setTitle(UserDataService.instance.name, for: .normal)
+    }
+
     @objc func userDataDidChange(_ notif: Notification) {
         setupUserInfo()
+        tableView.reloadData()
     }
     
     @objc func channelsLoaded(_ notif: Notification) {

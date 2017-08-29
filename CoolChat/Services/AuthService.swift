@@ -121,7 +121,28 @@ class AuthService {
         }
     }
     
-    func findUserByEmail(completion: @escaping CompletionHandler) {
+    func updateUser(name: String, id: String, email: String, avatar: String, color: String, completion: @escaping CompletionHandler) {
+        let body: [String: Any] = [
+            "name": name,
+            "email": email,
+            "avatarName": avatar,
+            "avatarColor": color
+        ]
+        Alamofire.request("\(URL_UPDATE_USER)\(id)", method: .put, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+         
+            if response.result.error == nil {
+
+                completion(true)
+                
+            } else {
+            
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
+    
+   func findUserByEmail(completion: @escaping CompletionHandler) {
         
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
